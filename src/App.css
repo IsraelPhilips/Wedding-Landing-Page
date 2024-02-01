@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Great+Vibes&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200&display=swap');
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+p,h1,h2,h3,h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: #fef8f8;
+  background-image: url('./images/wdbg.jpg');
+  background-position-x: center;
+  background-position-y: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.page {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.navbar {
+
+}
+
+.the-nav {
+  
+}
+
+.nav-elmt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-date {
+  font-size: 73%;
+  color: #290e00;
+}
+
+.nav-title {
+  margin-top: 30px;
+  /* font-family: 'Satisfy', cursive; */
+  /* font-family: 'Fleur De Leah', cursive; */
+  font-family: 'Great Vibes', cursive;
+  font-size: 300%;
+  text-align: center;
+  color: #00bec3;
+}
+
+.nav-links {
+  display: none;
+  text-decoration: none;
+  font-size: 85%;
+  text-transform: uppercase;
+  font-weight: 800;
+  width: 100%;
+  max-width: 530px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.nav-links a {
+  text-decoration: none; 
+  display: flex;
+  margin: auto;
+  color: black;
+}
+
+
+.nav-links a:hover {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.nav-links a:active {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.mobile-nav {
+  margin-top: 27px;
+}
+
+.mobile-nav img {
+  filter: invert(.5);
+  width: 24px;
+}
+
+.mobile-navg {
+  margin-top: 10px;;
+}
+
+.mobile-nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  animation: fade .5s 1 forwards;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.mobile-nav-items a {
+  display: flex;
+  margin: auto;
+  text-decoration: none;
+  font-size: 90%;
+  padding: 17px;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: rgba(0, 0, 0, .6);
+  width: 95%;
+  text-align: center;
+  box-sizing: border-box;
+  animation: roller .5s 1 forwards;
+}
+
+@keyframes roller {
+  from {transform: translateY(-40px); transform: rotate(-20deg); opacity: .3;}
+  to {transform: translateY(0); transform: rotate(0); opacity: 1;}
+}
+
+.mobile-nav-items a:hover {
+  background-color: #00bec3;
+  transition: .3s ease-in-out;
+}
+
+.hidden-scr {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .nav-title {
+    font-size: 400%;
+  }
+
+  .nav-date {
+    font-size: 83%;
+    font-weight: 500;
+  }
+
+  .hidden-scr {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-navg {
+    display: none;
+  }
+}
