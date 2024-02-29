@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className='the-nav'>
             <div className='nav-elmt'>
                 <div className='nav-title'>
-                    <p>Tunmise & Grace</p>
+                    <p>Grace & Tunmise</p>
                 </div>
                 <div className='nav-date'>
                     <p>APRIL 9, 2024</p>
