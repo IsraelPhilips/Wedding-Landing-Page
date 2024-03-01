@@ -45,9 +45,7 @@ const Navbar = () => {
                 <div className='nav-title'>
                     <p>Grace & Tunmise</p>
                 </div>
-                <div className='nav-date'>
-                    <p>APRIL 9, 2024</p>
-                </div>
+                
                 <div className='nav-links'>
                     <Link to='/'>Home</Link>
                     <Link to='#'>Our Story</Link>

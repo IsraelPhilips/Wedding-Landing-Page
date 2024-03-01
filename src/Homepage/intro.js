@@ -14,6 +14,11 @@ import Tw from '../images/12.jpg';
 import Thi from '../images/13.jpg';
 import Fo from '../images/14.jpg';
 
+import Mar from '../images/married.jpg';
+import Mar2 from '../images/married2.jpg';
+import Mar3 from '../images/married3.jpg';
+
+
 function Intro() {
 
   const images = [
@@ -30,8 +35,24 @@ function Intro() {
 
 
   return (
-    <div className="" style={{marginTop: "20px"}}>
-      <ImageGallery items={images} autoPlay={true} showFullscreenButton={false} showPlayButton={false} showNav={false} />
+    <div className="intro">
+      {/* <ImageGallery items={images} autoPlay={true} showFullscreenButton={false} showPlayButton={false} showNav={false} /> */}
+      {/* <div className="intro-text">
+        <h1>We are Getting Married!</h1>
+      </div>
+
+      <div className="intro-img">
+        <img src={Se} />
+      </div> */}
+      <div className="bg-img">
+        <img src={Mar2} />
+      </div>
+
+      <div className="intro-text">
+        <h2>We are Getting Married!</h2>
+        <h1>Grace & Tunmise</h1>
+        <p>April 13, 2024.</p>
+      </div>
     </div>
   );
 }
