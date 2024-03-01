@@ -18,6 +18,9 @@ import Mar from '../images/married.jpg';
 import Mar2 from '../images/married2.jpg';
 import Mar3 from '../images/married3.jpg';
 
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function Intro() {
 
@@ -44,15 +47,18 @@ function Intro() {
       <div className="intro-img">
         <img src={Se} />
       </div> */}
-      <div className="bg-img">
-        <img src={Mar2} />
-      </div>
+      {/* <AnimationOnScroll animateIn="fadeIn" animateOut="fadeOut" duration=".2" className="bg-img"> */}
+        <div className="bg-img">
+          <img src={Mar2} />
+        </div>
+      {/* </AnimationOnScroll> */}
 
       <div className="intro-text">
         <h2>We are Getting Married!</h2>
         <h1>Grace & Tunmise</h1>
         <p>April 13, 2024.</p>
       </div>
+
     </div>
   );
 }

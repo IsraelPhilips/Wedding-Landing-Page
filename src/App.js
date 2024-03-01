@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Homepage/navbar';
 import Intro from './Homepage/intro';
+import Story from './Homepage/story';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <div className='page'>
         <Navbar />
         <Intro />
+        <Story />
       </div>
     </div>
   );
