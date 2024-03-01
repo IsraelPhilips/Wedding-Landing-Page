@@ -17,6 +17,10 @@ import Tw from '../images/12.jpg';
 import Thi from '../images/13.jpg';
 import Fo from '../images/14.jpg';
 
+import LoveL from '../images/love-letter.png';
+import Love from '../images/love.png';
+import Hearts from '../images/hearts.png';
+
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -27,22 +31,22 @@ function Story() {
   return (
     <div className="love-story">
       
-      {/* <AnimationOnScroll animateIn="fadeIn" animateOut="fadeOut" duration=".2" className="bg-img"> */}
+      {/* <AnimationOnScroll animateIn="fadeIn" animateOut="fadeOut" duration=".6" className="bg-img"> */}
 
       {/* </AnimationOnScroll> */}
 
       <div className='love-text'>
-        <h1>Our Love Story</h1>
+        <h1>Our Love Story</h1><img src={Love} />
       </div>
 
       <div className="story">
         <div className='met-her'>
-            <AnimationOnScroll  animateIn="slideInLeft" animateOut="fadeOut" duration=".2" className='met-img'>
+            <AnimationOnScroll  animateIn="slideInLeft" animateOut="fadeOut" duration=".6" className='met-img'>
                 <img src={Fi} />
             </AnimationOnScroll>
-            <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".2" className='how'>
-                <AnimationOnScroll  animateIn="slideInRight" animateOut="fadeOut" duration=".2" ><h1>How I met her.</h1></AnimationOnScroll>
-                <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".2">
+            <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6" className='how'>
+                <AnimationOnScroll  animateIn="slideInRight" animateOut="fadeOut" duration=".6" ><h1>How I met her.</h1></AnimationOnScroll>
+                <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6">
                     <p>
                         My first conscious notice of Grace was in church. It was not a service day, but we were all in church preparing the church for service. Somehow, I noticed that when I looked her direction, our eyes locked always. "Who is this beautiful lady? I think she likes me," I said to myself.
 
@@ -52,23 +56,34 @@ function Story() {
 
                         We proceeded to Whatsapp and our first phone conversation lasted for hours. I was so so thrilled. I couldn't wrap my head around how much we connected at once. I immediately requested that we hang out so I could be sure all boxes ticked. I'm not too good with patience so I requested that we hung out the next day.
 
+                    </p>
+                </AnimationOnScroll>
+            </AnimationOnScroll>
+
+            <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6" className='how how-next'>
+                <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6">
+                    <p>
                         From the moment we had our first physical hangout, I knew it, I was going to marry this girl, and I didn't hide it. I loved the spark I saw in her eyes, I was fascinated by her convictions and approach to life. Her intelligence, my goodness, mind-blowing. Her personality and charisma was just everything to me.
 
                         With prayers, confirmations, spiritual leadership and guidance from our spiritual parents, support and lots of love from family and friends, we are here, about to tie the knot on a journey to forever.
 
-                    I love this babe so much. I just can't wait!
+                        I love this babe so much. I just can't wait!
                     </p>
                 </AnimationOnScroll>
             </AnimationOnScroll>
         </div>
 
-        <div className='met-her'>
-            <AnimationOnScroll  animateIn="slideInLeft" animateOut="fadeOut" duration=".2" className='met-img met-img-him'>
+        <div className='love-letter'>
+            <img src={LoveL} />
+        </div>
+        
+        <div className='met-her met-him'>
+            <AnimationOnScroll  animateIn="slideInLeft" animateOut="fadeOut" duration=".6" className='met-img met-img-him'>
                 <img className='met-imm' src={Ten} />
             </AnimationOnScroll>
-            <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".2" className='how2'>
-                <AnimationOnScroll  animateIn="slideInRight" animateOut="fadeOut" duration=".2" ><h1>When I met PTA.</h1></AnimationOnScroll>
-                <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".2">
+            <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6" className='how2'>
+                <AnimationOnScroll  animateIn="slideInRight" animateOut="fadeOut" duration=".6" ><h1>When I met PTA.</h1></AnimationOnScroll>
+                <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6">
                 <p>
                     I honestly thought he had liked me. He sent me a message on social media. 
 
@@ -78,6 +93,14 @@ function Story() {
 
                     I liked him, ngl. Our first date, he was already speaking to me about marriage. That would have ordinarily been a turn off for me but I remembered the words of my AFL, “Grace, God is going to be granting you speed in certain areas of your life. You don’t worry, just relax. It will happen.” Shout out to you, Dad. It's so strange how prophetic words don't fall to the ground. I remember my first conversation with AFL, how he told me God has an inheritance for me in SLC. Little did I know!
 
+                    
+                </p>
+                </AnimationOnScroll>
+            </AnimationOnScroll>
+
+            <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6" className='how2 how2-next'>
+                <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6">
+                <p>
                     Now, because I was like a doubting Thomas who was insatiable with the confirmations, I asked God for more. I felt like I had reached a point in my life and destiny where I could no longer afford to miss it in my marriage. Trust God; He was cheerful with settling the confirmations in my heart because I asked. Hence, growing in love with my PTA was seamless. Shout to You, God.
 
                     I love my man so much. I had been hearing couples call their spouses “my person” in the past but it made sense to me when I met mine. Looking forward to forever with my forever love.

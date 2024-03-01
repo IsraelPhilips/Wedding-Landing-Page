@@ -98,6 +98,7 @@ h1 {
 
 .mobile-nav {
   /* margin-top: 27px; */
+  cursor: pointer;
 }
 
 .mobile-nav img {
@@ -259,6 +260,20 @@ h1 {
   padding-top: 20%;
 }
 
+.love-text {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  justify-content: center;
+
+}
+
+.love-text img {
+  width: 40px;
+  margin-left: 10px;
+}
+
 .love-text h1 {
   text-align: center;
   font-size: 210%;
@@ -270,7 +285,9 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  max-width: 1100px;
+  margin: auto;
 }
 
 .met-her {
@@ -280,10 +297,22 @@ h1 {
 }
 
 .met-him {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  
 }
+
+.love-letter {
+  display: flex;
+  padding: 20px;
+  margin: auto;
+  
+}
+
+.love-letter img {
+  width: 140px;
+  object-fit: cover;
+  animation: bounce 4s infinite forwards;
+}
+
 .met-img {
   position: relative;
   z-index: 10;
@@ -299,12 +328,12 @@ h1 {
 
 
 .met-her {
-  margin-top: 32px;
+  margin-top: 42px;
 }
 
 .met-her div img {
   width: 290px;
-  border-radius: 20px;
+  border-radius: 100px;
   object-fit: cover;
   object-position: top;
   height: 300px;
@@ -327,8 +356,21 @@ h1 {
   z-index: 0;
 }
 
+.how-next {
+  margin-top: 4px !important;
+  padding-top: 20px !important;
+  background-color: #00bec3;
+}
+
+.how2-next {
+  margin-top: 4px !important;
+  padding-top: 20px !important;
+  background-color: #ee6084 !important;
+}
+
 .how h1 {
   text-align: center;
+  padding: 15px;
 }
 
 .how p {
@@ -353,4 +395,20 @@ h1 {
 
 .how2 h1 {
   text-align: center;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .story {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .love-text h1 {
+    font-size: 270%;
+  }
+  
+  .love-story {
+    padding-top: 10%;
+  }
 }
