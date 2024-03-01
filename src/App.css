@@ -204,7 +204,8 @@ p,h1,h2,h3,h4 {
   object-fit: cover;
   object-position: center;
   /* margin-top: -90px; */
-  filter: blur(.9px);
+  /* filter: blur(.9px); */
+  filter: opacity(.7);
   z-index: -10;
 }
 
