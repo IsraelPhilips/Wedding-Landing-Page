@@ -52,7 +52,7 @@ h1 {
   justify-content: space-between;
   padding: 20px;
   background-color: #00bdc382;
-  filter: drop-shadow(2px 3px 3px rgb(24, 23, 23));
+  filter: drop-shadow(2px 3px 3px rgb(46, 45, 45));
 }
 
 .nav-date {
@@ -436,6 +436,7 @@ h1 {
   padding-top: 30px;
   padding-bottom: 90px;
   background-color: aquamarine;
+
 }
 
 .location .love-text {
@@ -446,6 +447,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
   max-width: 1100px;;
 }
 
@@ -464,15 +466,17 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
   margin-top: 10%;
   padding: 30px;
   padding-top: 30px;
-  padding-bottom: 90px;
+  padding-bottom: 30px;
+  max-width: 1000px;
   /* background-color: aquamarine; */
 }
 
 .account {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .account h2 {
@@ -508,6 +512,7 @@ h1 {
   padding: 30px;
   max-width: 900px;
   align-items: center;
+  margin: auto;
 }
 
 .icons a {
@@ -524,4 +529,10 @@ h1 {
   color: white;
   line-height: 1.2;
   letter-spacing: -.7px;
+}
+
+@media (min-width: 768px) {
+  .account {
+    font-size: 150%;
+  }
 }

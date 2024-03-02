@@ -10,7 +10,7 @@ function Location() {
   return (
     <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6" >
     <div className="location" id="location">
-        <div className='love-text' id="location">
+        <div className='love-text'>
             <h1>Location</h1><img src={Church} />
         </div>
         <div className="address">

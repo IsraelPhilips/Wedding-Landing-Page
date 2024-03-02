@@ -29,13 +29,13 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function Story() {
 
   return (
-    <div className="love-story">
+    <div className="love-story" id="story">
       
       {/* <AnimationOnScroll animateIn="fadeIn" animateOut="fadeOut" duration=".6" className="bg-img"> */}
 
       {/* </AnimationOnScroll> */}
 
-      <div className='love-text' id="story">
+      <div className='love-text'>
         <h1>Our Love Story</h1><img src={Love} />
       </div>
 

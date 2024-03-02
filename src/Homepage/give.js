@@ -32,7 +32,7 @@ function Give() {
                     <a href="tel:+2347066312093"><img src={Call} /></a>
                     <a href="mailto:israelphilipsdev@gmail.com"><img src={Mail} /></a>
                 </div>
-                <p className="copy">Copyright © 2024 Grace & Tunmise. All Rights Reserved.</p>
+                <p className="copy">Copyright © 2024 Grace & Tunmise. <br />All Rights Reserved.</p>
             </div>
         </div>
     </>

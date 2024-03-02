@@ -11,16 +11,16 @@ import Navigation from '../images/Navigation.png';
 import DismissCircle from '../images/DismissCircle.png';
 
 
-const Menu = (sidebar) => {
+const Menu = ({showSidebar}) => {
 
     return (
         <div className="mobile-navg">
             <div className='mobile-nav-items'>
-                <Link to='#'>Home</Link>
-                <Link to='#story'>Our Story</Link>
-                <Link to='#location'>Location</Link>
-                <Link to='#give'>Give</Link>
-                <Link to='#contact'>Contact</Link>
+                <a href='#' onClick={showSidebar}>Home</a>
+                <a href='#story' onClick={showSidebar}>Our Story</a>
+                <a href='#location' onClick={showSidebar}>Location</a>
+                <a href='#give' onClick={showSidebar}>Give</a>
+                <a href='#contact' onClick={showSidebar}>Contact</a>
             </div>
         </div>
     )
@@ -48,11 +48,11 @@ const Navbar = () => {
                 </div>
                 
                 <div className='nav-links'>
-                    <Link to='/'>Home</Link>
-                    <Link to='#story'>Our Story</Link>
-                    <Link to='#location'>Location</Link>
-                    <Link to='#give'>Give</Link>
-                    <Link to='#footer'>Contact</Link>
+                    <a href='#'>Home</a>
+                    <a href='#story'>Our Story</a>
+                    <a href='#location'>Location</a>
+                    <a href='#give'>Give</a>
+                    <a href='#footer'>Contact</a>
                 </div>                    
 
                 {!sidebar ?
@@ -70,7 +70,7 @@ const Navbar = () => {
             <div className=''>
             </div> :
             <div className=''>
-                <Menu sidebar={sidebar}  />
+                <Menu sidebar={sidebar} showSidebar={showSidebar} setSidebar={setSidebar} onClick={showSidebar} />
             </div>
         }
     </div>
