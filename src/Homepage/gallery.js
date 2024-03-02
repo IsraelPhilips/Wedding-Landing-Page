@@ -15,6 +15,7 @@ import Thi from '../images/13.jpg';
 import Fo from '../images/14.jpg';
 import Fif from '../images/15.jpg';
 import Sev from '../images/17.jpg';
+import Ei from '../images/18.jpg';
 
 import Mar from '../images/married.jpg';
 import Mar2 from '../images/married2.jpg';
@@ -46,6 +47,14 @@ function Gallery() {
     {
       original: Tw,
       thumbnail: Tw,
+    }, 
+    {
+        original: N,
+        thumbnail: N,
+    },  
+    {
+        original: Ei,
+        thumbnail: Ei,
     },  
     {
       original: Se,
