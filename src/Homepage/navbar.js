@@ -17,9 +17,10 @@ const Menu = (sidebar) => {
         <div className="mobile-navg">
             <div className='mobile-nav-items'>
                 <Link to='#'>Home</Link>
-                <Link to='#'>Our Story</Link>
-                <Link to='#'>Give</Link>
-                <Link to='#'>Contact</Link>
+                <Link to='#story'>Our Story</Link>
+                <Link to='#location'>Location</Link>
+                <Link to='#give'>Give</Link>
+                <Link to='#contact'>Contact</Link>
             </div>
         </div>
     )
@@ -48,9 +49,10 @@ const Navbar = () => {
                 
                 <div className='nav-links'>
                     <Link to='/'>Home</Link>
-                    <Link to='#'>Our Story</Link>
-                    <Link to='#'>Give</Link>
-                    <Link to='#'>Contact</Link>
+                    <Link to='#story'>Our Story</Link>
+                    <Link to='#location'>Location</Link>
+                    <Link to='#give'>Give</Link>
+                    <Link to='#footer'>Contact</Link>
                 </div>                    
 
                 {!sidebar ?

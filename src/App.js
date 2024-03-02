@@ -4,6 +4,8 @@ import Navbar from './Homepage/navbar';
 import Intro from './Homepage/intro';
 import Story from './Homepage/story';
 import Gallery from './Homepage/gallery';
+import Give from './Homepage/give';
+import Location from './Homepage/location';
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <Intro />
         <Story />
         <Gallery />
+        <Location />
+        <Give />
       </div>
     </div>
   );

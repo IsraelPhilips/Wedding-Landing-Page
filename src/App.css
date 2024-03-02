@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -48,7 +52,7 @@ h1 {
   justify-content: space-between;
   padding: 20px;
   background-color: #00bdc382;
-  filter: drop-shadow(2px 3px 3px black);
+  filter: drop-shadow(2px 3px 3px rgb(24, 23, 23));
 }
 
 .nav-date {
@@ -421,4 +425,103 @@ h1 {
   .gallery {
     display: none;
   }
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 90px;
+  background-color: aquamarine;
+}
+
+.location .love-text {
+  padding: 20px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;;
+}
+
+.address h2 {
+  font-weight: 600;
+  margin-left: 10px;
+  line-height: 1;
+  letter-spacing: -2.2px;
+}
+
+.address img {
+  width: 70px;
+}
+
+.give {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 90px;
+  /* background-color: aquamarine; */
+}
+
+.account {
+  margin-top: 15px;
+}
+
+.account h2 {
+  padding: 30px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 100%;
+  /* margin-left: 10px; */
+  line-height: 1.9;
+  /* text-align: center; */
+  letter-spacing: -1.1px;
+  background-color: aliceblue;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+  padding: 30px;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  background-color: #121212;
+}
+
+.footer .nav-title p {
+  color: white;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  max-width: 900px;
+  align-items: center;
+}
+
+.icons a {
+  text-decoration: none !important;
+  display: flex;
+}
+
+.icons img {
+  width: 30px;
+}
+
+.copy {
+  text-align: center;
+  color: white;
+  line-height: 1.2;
+  letter-spacing: -.7px;
 }

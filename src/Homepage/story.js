@@ -35,7 +35,7 @@ function Story() {
 
       {/* </AnimationOnScroll> */}
 
-      <div className='love-text'>
+      <div className='love-text' id="story">
         <h1>Our Love Story</h1><img src={Love} />
       </div>
 
