@@ -628,3 +628,23 @@ h1 {
   }
   
 }
+
+.video-prop {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+}
+
+.video-prop video {
+  width: 100%;
+  object-fit: cover;
+}
+
+.video-prop img {
+  display: flex;
+  margin-left: auto;
+  width: 45px;
+  transform: rotate(45deg);
+
+}

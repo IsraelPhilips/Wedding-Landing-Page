@@ -20,6 +20,8 @@ import Fo from '../images/14.jpg';
 import LoveL from '../images/love-letter.png';
 import Love from '../images/love.png';
 import Hearts from '../images/hearts.png';
+import Arrow from '../images/down-arrow.png';
+import Proposal from '../images/proposal.mp4';
 
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
@@ -29,6 +31,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function Story() {
 
   return (
+    <>
     <div className="love-story" id="story">
       
       {/* <AnimationOnScroll animateIn="fadeIn" animateOut="fadeOut" duration=".6" className="bg-img"> */}
@@ -113,6 +116,14 @@ function Story() {
 
       </div>
     </div>
+    <div className='video-prop'>
+        <img src={Arrow} />
+        <video autoplay muted loop>
+            <source src={Proposal} type="video/mp4" />
+        </video>
+        
+    </div>
+    </>
   );
 }
 

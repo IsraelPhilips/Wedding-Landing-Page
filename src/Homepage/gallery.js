@@ -17,6 +17,9 @@ import Fif from '../images/15.jpg';
 import Sev from '../images/17.jpg';
 import Ei from '../images/18.jpg';
 
+import Prop1 from '../images/prop2.jpg';
+import Prop2 from '../images/prop3.jpg';
+
 import Mar from '../images/married.jpg';
 import Mar2 from '../images/married2.jpg';
 import Mar3 from '../images/married3.jpg';
@@ -28,6 +31,14 @@ import ScrollAnimation from 'react-animate-on-scroll';
 function Gallery() {
 
   const images = [
+    {
+      original: Prop1,
+      thumbnail: Prop1,
+    },
+    {
+      original: Prop2,
+      thumbnail: Prop2,
+    },
     {
       original: O,
       thumbnail: O,
@@ -73,6 +84,9 @@ function Gallery() {
 
   return (
     <div className="gallery">
+      <div className='love-text'>
+            <h1>Gallery</h1>
+        </div>
       <ImageGallery items={images} slideDuration={225} autoPlay={true} showFullscreenButton={false} showPlayButton={false} showNav={false} />
     </div>
   );
