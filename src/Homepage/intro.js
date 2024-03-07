@@ -44,6 +44,26 @@ function Intro() {
   // Convert the futureDate to a timestamp
   const futureTimestamp = futureDate.getTime();
 
+  const renderer = ({ days, hours, minutes, seconds }) => (
+    <div className="count-down">
+      <span className="days">
+        <div>{days}</div>
+        <p>Days</p>
+      </span>
+      <span className="hours">
+        <div>{hours}</div>
+        <p>Hours</p>
+      </span>
+      <span className="minutes">
+        <div>{minutes}</div>
+        <p>Minutes</p>
+      </span>
+      <span className="secs">
+        <div>{seconds}</div>
+        <p>Seconds</p>
+      </span>
+    </div>
+  );
 
   return (
     <div className="intro">
@@ -68,8 +88,7 @@ function Intro() {
       </div>
 
       <div className="count">
-        <Countdown date='2024-04-13T10:00:00' />
-        <p>Days Hours Minutes Seconds</p>
+        <Countdown date='2024-04-13T10:00:00' renderer={renderer} />
       </div>
     </div>
   );

@@ -262,7 +262,7 @@ h1 {
 .love-story {
   padding: 20px;
   padding-top: 20%;
-  background-image: url('./images/married.jpg');
+  /* background-image: url('./images/married3.jpg'); */
   background-size: cover;
   background-position: center;
 }
@@ -544,14 +544,33 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 25px;
+  padding: 40px 25px;
   /* background-image: url('./images/married.jpg'); */
   background-size: cover;
   background-position: center;
-  filter: drop-shadow(1px 1px 8px rgb(100, 100, 100));
+  background-color: white;
+  filter: drop-shadow(1px 1px 20px rgb(180, 180, 180));
+  box-sizing: border-box !important;
 }
 
-.count span {
+.count-down {
+  display: flex;
+  justify-content: center;
+}
+
+.count-down span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.secs {
+  margin-right: 0 !important;
+}
+
+.count-down div {
   font-size: 300%;
   font-weight: 800;
   word-spacing: 10px;
@@ -560,8 +579,22 @@ h1 {
 
 }
 
-.count p {
+.count-down p {
   font-size: 120%;
   word-spacing: 10px;
   font-family: 'Great Vibes', cursive;
+}
+
+@media (min-width: 768px) {
+  .count-down div {
+    font-size: 500%;
+  }
+  .count-down p {
+    font-size: 220%;
+    word-spacing: 20px;
+  }
+  .count-down span {
+    margin-right: 30px;
+  }
+  
 }
