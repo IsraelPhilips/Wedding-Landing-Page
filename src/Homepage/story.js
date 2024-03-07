@@ -119,7 +119,7 @@ function Story() {
     <div className='video-prop'>
         <img src={Arrow} />
         <video autoplay muted loop>
-            <source src={Proposal} type="video/mp4" />
+            <source src="{Proposal}" type="video/mp4" />
         </video>
         
     </div>

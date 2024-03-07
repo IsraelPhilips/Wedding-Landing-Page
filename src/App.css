@@ -634,6 +634,7 @@ h1 {
   flex-direction: column;
   margin: auto;
   padding: 20px;
+  max-width: 900px;
 }
 
 .video-prop video {
@@ -647,4 +648,15 @@ h1 {
   width: 45px;
   transform: rotate(45deg);
 
+}
+
+@media (min-width: 768px) {
+  .video-prop img {
+    display: flex;
+    margin-right: 40px;
+    margin-left: auto;
+    width: 70px;
+    transform: rotate(45deg);
+  
+  }
 }
