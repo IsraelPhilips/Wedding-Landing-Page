@@ -277,7 +277,7 @@ h1 {
 }
 
 .love-text img {
-  width: 40px;
+  width: 50px;
   margin-left: 10px;
 }
 
@@ -475,11 +475,41 @@ h1 {
   padding-top: 30px;
   padding-bottom: 30px;
   max-width: 1000px;
+  /* background-image: url('./images/married3.jpg'); */
+  /* background-size: cover; */
+
   /* background-color: aquamarine; */
 }
 
 .account {
-  margin-top: 5px;
+  margin-top: 15px;
+}
+
+.account .show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px;
+  border-radius: 12px;
+  background-color: white;
+  filter: drop-shadow(1px 2px 4px grey);
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.account .show p {
+  font-weight: 500;
+  font-size: 90%;
+}
+
+.account .show img {
+  width: 26px;
+  margin-left: 10px;
+}
+
+.account p {
+  font-size: 78%;
+  text-align: center;
 }
 
 .account h2 {
@@ -575,7 +605,7 @@ h1 {
   font-weight: 800;
   word-spacing: 10px;
   color:#f8c058;
-  
+  text-shadow: 1px 2px 2px grey;
 
 }
 

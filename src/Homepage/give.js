@@ -5,21 +5,28 @@ import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Gift from '../images/gift.png';
+import Hearts from '../images/hearts.png';
 
 import Call from '../images/phone-call.png';
 import Mail from '../images/mail.png';
+import { useState } from "react";
 
 function Give() {
+    const [showDetails, setShowDetails] = useState(false)
 
   return (
     <>
         <div className="give" id="give">
             <div className='love-text' id="location">
-                <h1>Give</h1><img src={Gift} />
+                <h1>Celebrating Together</h1><img src={Hearts} />
             </div>
             <div className="account">
-                <p>Send in your cash gifts to the account details below:</p>
-                <h2><strong>Account Details:</strong> <br /> Account Number: 7066312093 <br /> Account Name: Apara Tunmise <br />Bank: Opay </h2>
+                <p>We are incredibly grateful for your presence as we embark on this journey together. Your love and support mean the world to us. While your presence is the greatest gift, if you wish to contribute in another way, we would be honored by your support.</p>
+                <div className="show" onClick={() => setShowDetails(!showDetails)}><p>Cash Gifts</p><img src={Gift} /></div>
+                {showDetails ?
+                    <h2><strong>Account Details:</strong> <br /> Account Number: 7066312093 <br /> Account Name: Apara Tunmise <br />Bank: Opay </h2>
+                    : <></>
+                }
             </div>
         </div>
 
