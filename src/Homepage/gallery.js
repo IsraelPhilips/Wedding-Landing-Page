@@ -84,8 +84,8 @@ function Gallery() {
 
   return (
     <div className="gallery">
-      <div className='love-text'>
-            <h1>Gallery</h1>
+      <div className='love-text extra-gll'>
+            <h1>Couple's Gallery</h1>
         </div>
       <ImageGallery items={images} slideDuration={225} autoPlay={true} showFullscreenButton={false} showPlayButton={false} showNav={false} />
     </div>
