@@ -262,6 +262,9 @@ h1 {
 .love-story {
   padding: 20px;
   padding-top: 20%;
+  background-image: url('./images/married.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .love-text {
@@ -535,4 +538,30 @@ h1 {
   .account {
     font-size: 150%;
   }
+}
+
+.count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 25px;
+  /* background-image: url('./images/married.jpg'); */
+  background-size: cover;
+  background-position: center;
+  filter: drop-shadow(1px 1px 8px rgb(100, 100, 100));
+}
+
+.count span {
+  font-size: 300%;
+  font-weight: 800;
+  word-spacing: 10px;
+  color:#f8c058;
+  
+
+}
+
+.count p {
+  font-size: 120%;
+  word-spacing: 10px;
+  font-family: 'Great Vibes', cursive;
 }

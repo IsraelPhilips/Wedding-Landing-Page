@@ -22,6 +22,9 @@ import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import Countdown from 'react-countdown';
+
+
 function Intro() {
 
   const images = [
@@ -35,6 +38,11 @@ function Intro() {
     },
     
   ];
+
+  const futureDate = new Date(2024, 3, 13); // Months are zero-indexed (0 = January, 1 = February, ..., 3 = April)
+
+  // Convert the futureDate to a timestamp
+  const futureTimestamp = futureDate.getTime();
 
 
   return (
@@ -59,6 +67,10 @@ function Intro() {
         <p>April 13, 2024.</p>
       </div>
 
+      <div className="count">
+        <Countdown date='2024-04-13T10:00:00' />
+        <p>Days Hours Minutes Seconds</p>
+      </div>
     </div>
   );
 }
