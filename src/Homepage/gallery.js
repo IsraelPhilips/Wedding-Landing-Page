@@ -71,14 +71,7 @@ function Gallery() {
       original: Se,
       thumbnail: Se,
     },
-    {
-      original: Fif,
-      thumbnail: Fif,
-    },
-    {
-      original: Sev,
-      thumbnail: Sev,
-    },    
+    
   ];
 
 
