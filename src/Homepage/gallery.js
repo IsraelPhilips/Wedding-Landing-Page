@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import ImageGallery from "react-image-gallery";
 import { Gallery } from "react-grid-gallery";
 import O from '../images/1.jpg';
@@ -29,9 +31,12 @@ import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
 function FullGallery() {
 
-  const images = [
+  const imagesFirst = [
     {
       original: Prop1,
       thumbnail: Prop1,
@@ -75,28 +80,44 @@ function FullGallery() {
     
   ];
 
-  const imagesSecond = [
+  const images = [
     {
        src: Pre1,
-       width: 320,
-       height: 374,
-       caption: "After Rain (Jeshu John - designerspics.com)",
+       original: Pre1,
+       width: 720,
+       height: 774,
        alt: "Pre Wedding Shoots",
     },
     {
        src: Pre2,
-       width: 320,
-       height: 412,
+       original: Pre2,
+       width: 520,
+       height: 712,
        alt: "Pre Wedding Shoots",
     },
     {
        src: Pre3,
-       width: 320,
+       original: Pre3,
+       width: 520,
        height: 412,
        alt: "Pre Wedding Shoots",
     },
  ];
  
+
+ const [index, setIndex] = useState(-1);
+ const [open, setOpen] = useState(false);
+
+  const currentImage = images[index];
+  const nextIndex = (index + 1) % images.length;
+  const nextImage = images[nextIndex] || currentImage;
+  const prevIndex = (index + images.length - 1) % images.length;
+  const prevImage = images[prevIndex] || currentImage;
+
+  const handleClick = (index, item) => setIndex(index);
+  const handleClose = () => setIndex(-1);
+  const handleMovePrev = () => setIndex(prevIndex);
+  const handleMoveNext = () => setIndex(nextIndex);
 
 
   return (
@@ -105,11 +126,53 @@ function FullGallery() {
       <div className='love-text extra-gll'>
             <h1>Couple's Gallery</h1>
         </div>
-      <ImageGallery items={images} slideDuration={225} autoPlay={true} showFullscreenButton={false} showPlayButton={false} showNav={false} />
+      <ImageGallery items={imagesFirst} slideDuration={225} autoPlay={true} showFullscreenButton={false} showPlayButton={false} showNav={false} />
     </div>
-    <div className="spgrid">
-      <Gallery style={{display: 'flex', margin: 'auto !important'}} className="spgrid-img" images={imagesSecond} />
+    {/* <div className="spgrid">
+     
+      <Gallery
+        images={images}
+        onClick={handleClick}
+        enableImageSelection={false}
+      />
+      {!!currentImage && (
+        
+        <Lightbox
+          mainSrc={currentImage.original}
+          imageTitle={currentImage.caption}
+          mainSrcThumbnail={currentImage.src}
+          nextSrc={nextImage.original}
+          nextSrcThumbnail={nextImage.src}
+          prevSrc={prevImage.original}
+          prevSrcThumbnail={prevImage.src}
+          onCloseRequest={handleClose}
+          onMovePrevRequest={handleMovePrev}
+          onMoveNextRequest={handleMoveNext}
+        />
+      )}
+    </div> */}
+
+    <div onClick={() => setOpen(true)}>
+      <div className='fst-grid'>
+        <div className='left-side'>
+          <img src={Pre1} />
+          <img src={Pre3} />
+        </div>
+        <div className='r-side'>
+          <img src={Pre2} />
+        </div>
+      </div>
+      
     </div>
+    <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={[
+          { src: Pre1 },
+          { src: Pre2 },
+          { src: Pre3 },
+        ]}
+      />
     </>
   );
 }
