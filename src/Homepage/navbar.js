@@ -20,7 +20,7 @@ const Menu = ({showSidebar}) => {
                 <a href='#story' onClick={showSidebar}>Our Story</a>
                 <a href='#location' onClick={showSidebar}>Location</a>
                 <a href='#give' onClick={showSidebar}>Give</a>
-                <a href='#contact' onClick={showSidebar}>Contact</a>
+                <a href='#footer' onClick={showSidebar}>Contact</a>
             </div>
         </div>
     )

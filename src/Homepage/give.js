@@ -9,6 +9,7 @@ import Hearts from '../images/hearts.png';
 
 import Call from '../images/phone-call.png';
 import Mail from '../images/mail.png';
+import Whatsapp from '../images/whatsapp.png';
 import LoveArro from '../images/love-arro.png';
 import { useState } from "react";
 
@@ -55,7 +56,7 @@ function Give() {
             <div className="account">
                 <div className="icons">
                     <a href="tel:+2347066312093"><img src={Call} /></a>
-                    <a href="mailto:israelphilipsdev@gmail.com"><img src={Mail} /></a>
+                    <a href="https://wa.me/2347066312093"><img src={Whatsapp} /></a>
                 </div>
                 <p className="copy">Copyright © 2024 Grace & Tunmise. <br />All Rights Reserved.</p>
             </div>
