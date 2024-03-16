@@ -1,4 +1,5 @@
 import ImageGallery from "react-image-gallery";
+import { Gallery } from "react-grid-gallery";
 import O from '../images/1.jpg';
 import T from '../images/2.jpg';
 import Th from '../images/3.jpg';
@@ -20,15 +21,15 @@ import Ei from '../images/18.jpg';
 import Prop1 from '../images/prop2.jpg';
 import Prop2 from '../images/prop3.jpg';
 
-import Mar from '../images/married.jpg';
-import Mar2 from '../images/married2.jpg';
-import Mar3 from '../images/married3.jpg';
+import Pre1 from '../images/pre1.jpg';
+import Pre2 from '../images/pre2.jpg';
+import Pre3 from '../images/pre3.jpg';
 
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-function Gallery() {
+function FullGallery() {
 
   const images = [
     {
@@ -74,15 +75,43 @@ function Gallery() {
     
   ];
 
+  const imagesSecond = [
+    {
+       src: Pre1,
+       width: 320,
+       height: 374,
+       caption: "After Rain (Jeshu John - designerspics.com)",
+       alt: "Pre Wedding Shoots",
+    },
+    {
+       src: Pre2,
+       width: 320,
+       height: 412,
+       alt: "Pre Wedding Shoots",
+    },
+    {
+       src: Pre3,
+       width: 320,
+       height: 412,
+       alt: "Pre Wedding Shoots",
+    },
+ ];
+ 
+
 
   return (
+    <>
     <div className="gallery">
       <div className='love-text extra-gll'>
             <h1>Couple's Gallery</h1>
         </div>
       <ImageGallery items={images} slideDuration={225} autoPlay={true} showFullscreenButton={false} showPlayButton={false} showNav={false} />
     </div>
+    <div className="spgrid">
+      <Gallery style={{display: 'flex', margin: 'auto !important'}} className="spgrid-img" images={imagesSecond} />
+    </div>
+    </>
   );
 }
 
-export default Gallery;
+export default FullGallery;

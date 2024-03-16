@@ -23,10 +23,14 @@ function Give() {
             <div className="account">
                 <p>We are incredibly grateful for your presence as we embark on this journey together. Your love and support mean the world to us. While your presence is the greatest gift, if you wish to contribute in another way, we would be honored by your support.</p>
                 <div className="show" onClick={() => setShowDetails(!showDetails)}><p>Cash Gifts</p><img src={Gift} /></div>
-                {showDetails ?
-                    <h2><strong>Account Details:</strong> <br /> Account Number: 7066312093 <br /> Account Name: Apara Tunmise <br />Bank: Opay </h2>
-                    : <></>
-                }
+                {/* {showDetails ?  */}
+                    <>
+                    <h2><strong>Account Details:</strong> <br /> Account Number: 2274248791
+                    <br /> Account Name: Apara Tunmise Samuel <br />Bank: Uba </h2><br /><h2><strong>OR:</strong> <br /> Account Number: 2274248791
+                    <br /> Account Name: Grace Akowe <br />Bank: Zenith </h2><br /><h2><strong>DOLLAR ACCOUNT:</strong> <br /> Account Number: 2303154213 <br ></br> <strong>SWIFT Code:</strong> UNAFNGLA 
+                    <br /> Account Name: Grace Akowe <br />Bank: Zenith </h2></>
+                    {/* : <></>
+                } */}
             </div>
         </div>
 

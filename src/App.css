@@ -523,7 +523,8 @@ h1 {
 }
 
 .account h2 {
-  padding: 30px;
+  padding: 12px;
+  font-size: 83% !important;
   border-radius: 10px;
   font-weight: 500;
   font-size: 100%;
@@ -658,6 +659,21 @@ h1 {
   width: 45px;
   transform: rotate(45deg);
 
+}
+.ReactGridGallery {
+  display: flex !important;
+  /* margin: auto !important; */
+  justify-content: center !important;
+}
+
+.spgrid-img {
+  display: flex;
+  margin: auto;
+}
+
+.ReactGridGallery img {
+  object-fit: cover !important;
+  object-position: top;
 }
 
 @media (min-width: 768px) {
