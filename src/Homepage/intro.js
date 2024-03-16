@@ -88,7 +88,7 @@ function Intro() {
       </div>
 
       <div className="count">
-        <Countdown date='2024-04-13T00:00:00' renderer={renderer} />
+        <Countdown date='2024-04-13T10:00:00' renderer={renderer} />
       </div>
     </div>
   );

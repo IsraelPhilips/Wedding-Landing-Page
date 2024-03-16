@@ -57,7 +57,7 @@ function Story() {
                     <p>
                     My first conscious notice of Grace was in church. It was not a service day, but we were all in church preparing for service. Somehow, I noticed that whenever I looked her direction, our eyes were always locking. "Who is this beautiful lady? I think she likes me," I said to myself.
 
-                   <br /><br /> AFL once said to me "Who go bless you no go stress you" and it was my watchword for that season. I trusted God for a prepared person, a prepared blessing.
+                   <br />I was trusting God for a prepared person, a prepared blessing.
 
                     <br /><br /> To cut it short, we began from Instagram, where she followed me back and suddenly liked so many posts of mine (iykyk). I sent her a message and she responded stating how much my videos blessed her and she even added that she saved some for later. Lol. Smart lady.
 
