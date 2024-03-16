@@ -27,7 +27,7 @@ function Give() {
                 {/* {showDetails ?  */}
                     <>
                     <h2><strong>Couple's Account Details:</strong> <br /> Account Number: 2274248791
-                    <br /> Account Name: Apara Tunmise Samuel <br />Bank: Uba </h2><br /><h2><strong>OR:</strong> <br /> Account Number: 2274248791
+                    <br /> Account Name: Apara Tunmise Samuel <br />Bank: Uba </h2><br /><h2><strong>OR:</strong> <br /> Account Number: 2369547561
                     <br /> Account Name: Grace Akowe <br />Bank: Zenith </h2><br /><h2><strong>DOLLAR ACCOUNT:</strong> <br /> Account Number: 2303154213 <br ></br> <strong>SWIFT Code:</strong> UNAFNGLA 
                     <br /> Account Name: Apara Tunmise Samuel <br />Bank: UBA </h2></>
                     {/* : <></>
@@ -42,7 +42,7 @@ function Give() {
             <div className="account">
                 <p>To our beloved family, friends, and all who have shared in our celebration,
 
-    As we reflect on our wedding day, we are overwhelmed with gratitude for your love and support. Your presence would make our day truly unforgettable, and we are deeply touched by your kindness and generosity.
+    as we reflect on our wedding day, we are overwhelmed with gratitude for your love and support. Your presence would make our day truly unforgettable, and we are deeply touched by your kindness and generosity.
 
     Thank you for your warm wishes, thoughtful gifts, and for being a part of our journey. Your love fills our hearts and will accompany us as we begin this new chapter together.</p>
             </div>
