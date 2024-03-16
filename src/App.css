@@ -421,11 +421,15 @@ h1 {
 }
 
 .gallery {
-  padding: 20px;
+  /* padding: 20px; */
   padding-top: 20px;
-  padding-bottom: 25%;
+  /* padding-bottom: 25%; */
   margin-top: 30px;
   background-color: #f2efea;
+}
+
+.gallery-inner {
+  padding: 20px;
 }
 
 .extra-gll {
@@ -442,14 +446,24 @@ h1 {
 
 .location {
   display: flex;
+  color: #fff;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   /* margin-top: 10%; */
-  padding: 30px;
-  padding-top: 30px;
-  padding-bottom: 90px;
-  background-color: aquamarine;
+  padding: 10px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  /* background-color: aquamarine; */
+  background-image: url('./images/location.jpg');
+  background-size: cover;
+  background-position: top;
 
+}
+
+.location-inside {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 20px;
 }
 
 .location .love-text {
@@ -458,7 +472,8 @@ h1 {
 
 .address {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
   justify-content: center;
   margin: auto;
   max-width: 1100px;;
@@ -468,7 +483,7 @@ h1 {
   font-weight: 600;
   margin-left: 10px;
   line-height: 1;
-  letter-spacing: -2.2px;
+  letter-spacing: -1.1px;
 }
 
 .address img {
@@ -681,7 +696,7 @@ h1 {
   width: 100%;
   justify-content: space-between;
   margin: auto;
-  max-width: 900px;
+  max-width: 950px;
 }
 
 .left-side {
@@ -709,8 +724,18 @@ h1 {
   width: 100%;
   object-fit: cover;
   object-position: top;
-  height: 500px;
+  height: 502px;
   cursor: pointer;
+}
+
+.love-arrow {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.love-arrow {
+  width: 140px;
 }
 
 @media (min-width: 768px) {

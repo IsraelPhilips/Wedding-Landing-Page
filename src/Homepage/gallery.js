@@ -27,6 +27,9 @@ import Pre1 from '../images/pre1.jpg';
 import Pre2 from '../images/pre2.jpg';
 import Pre3 from '../images/pre3.jpg';
 
+import LoveArr from '../images/love-arr.png';
+import LoveArro from '../images/love-arro.png';
+
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -123,56 +126,58 @@ function FullGallery() {
   return (
     <>
     <div className="gallery">
-      <div className='love-text extra-gll'>
-            <h1>Couple's Gallery</h1>
+        <div className='gallery-inner'>
+          <div className='love-text extra-gll'>
+                <h1>Couple's Gallery</h1>
+            </div>
+          <ImageGallery items={imagesFirst} slideDuration={225} autoPlay={true} showFullscreenButton={false} showPlayButton={false} showNav={false} />
         </div>
-      <ImageGallery items={imagesFirst} slideDuration={225} autoPlay={true} showFullscreenButton={false} showPlayButton={false} showNav={false} />
-    </div>
-    {/* <div className="spgrid">
-     
-      <Gallery
-        images={images}
-        onClick={handleClick}
-        enableImageSelection={false}
-      />
-      {!!currentImage && (
-        
-        <Lightbox
-          mainSrc={currentImage.original}
-          imageTitle={currentImage.caption}
-          mainSrcThumbnail={currentImage.src}
-          nextSrc={nextImage.original}
-          nextSrcThumbnail={nextImage.src}
-          prevSrc={prevImage.original}
-          prevSrcThumbnail={prevImage.src}
-          onCloseRequest={handleClose}
-          onMovePrevRequest={handleMovePrev}
-          onMoveNextRequest={handleMoveNext}
-        />
-      )}
-    </div> */}
-
-    <div onClick={() => setOpen(true)}>
-      <div className='fst-grid'>
-        <div className='left-side'>
-          <img src={Pre1} />
-          <img src={Pre3} />
-        </div>
-        <div className='r-side'>
-          <img src={Pre2} />
-        </div>
-      </div>
+      {/* <div className="spgrid">
       
-    </div>
-    <Lightbox
-        open={open}
-        close={() => setOpen(false)}
-        slides={[
-          { src: Pre1 },
-          { src: Pre2 },
-          { src: Pre3 },
-        ]}
-      />
+        <Gallery
+          images={images}
+          onClick={handleClick}
+          enableImageSelection={false}
+        />
+        {!!currentImage && (
+          
+          <Lightbox
+            mainSrc={currentImage.original}
+            imageTitle={currentImage.caption}
+            mainSrcThumbnail={currentImage.src}
+            nextSrc={nextImage.original}
+            nextSrcThumbnail={nextImage.src}
+            prevSrc={prevImage.original}
+            prevSrcThumbnail={prevImage.src}
+            onCloseRequest={handleClose}
+            onMovePrevRequest={handleMovePrev}
+            onMoveNextRequest={handleMoveNext}
+          />
+        )}
+      </div> */}
+      <img className='love-arrow' src={LoveArr} />
+      <div onClick={() => setOpen(true)}>
+        <div className='fst-grid'>
+          <div className='left-side'>
+            <img src={Pre1} />
+            <img src={Pre3} />
+          </div>
+          <div className='r-side'>
+            <img src={Pre2} />
+          </div>
+        </div>
+        
+      </div>
+      <Lightbox
+          open={open}
+          close={() => setOpen(false)}
+          slides={[
+            { src: Pre1 },
+            { src: Pre2 },
+            { src: Pre3 },
+          ]}
+        />
+      </div>
     </>
   );
 }

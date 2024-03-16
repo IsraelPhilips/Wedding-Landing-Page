@@ -10,12 +10,15 @@ function Location() {
   return (
     <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6" >
     <div className="location" id="location">
+      <div className="location-inside">
         <div className='love-text'>
-            <h1>Location</h1><img src={Church} />
+            <h1>Location</h1><img src={Map} />
         </div>
         <div className="address">
-            <img src={Map} />
-            <h2>SLC Auditorium, Former Fun Factory, Oshuntokun Avenue, 200285, Ibadan, Nigeria.</h2>
+            {/* <img src={Map} /> */}
+            <h2 style={{fontWeight: '500'}}>The wedding and reception would be taking place at:</h2><br />
+            <h2>SLC Auditorium, <br />Former Fun Factory, <br />Oshuntokun Avenue, 200285, <br />Ibadan, Nigeria.</h2>
+        </div>
         </div>
     </div>
     </AnimationOnScroll>
