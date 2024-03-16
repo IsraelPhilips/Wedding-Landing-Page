@@ -57,10 +57,6 @@ function FullGallery() {
       thumbnail: Th,
     },
     {
-      original: Ten,
-      thumbnail: Ten,
-    },
-    {
       original: El,
       thumbnail: El,
     },  
