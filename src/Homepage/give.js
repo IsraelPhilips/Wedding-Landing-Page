@@ -29,7 +29,7 @@ function Give() {
                     <h2><strong>Couple's Account Details:</strong> <br /> Account Number: 2274248791
                     <br /> Account Name: Apara Tunmise Samuel <br />Bank: Uba </h2><br /><h2><strong>OR:</strong> <br /> Account Number: 2274248791
                     <br /> Account Name: Grace Akowe <br />Bank: Zenith </h2><br /><h2><strong>DOLLAR ACCOUNT:</strong> <br /> Account Number: 2303154213 <br ></br> <strong>SWIFT Code:</strong> UNAFNGLA 
-                    <br /> Account Name: Grace Akowe <br />Bank: Zenith </h2></>
+                    <br /> Account Name: Apara Tunmise Samuel <br />Bank: UBA </h2></>
                     {/* : <></>
                 } */}
             </div>
