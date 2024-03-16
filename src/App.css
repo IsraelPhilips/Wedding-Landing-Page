@@ -737,6 +737,32 @@ h1 {
 .love-arrow {
   width: 140px;
 }
+.thanks-text {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  justify-content: center;
+
+}
+
+.thanks-text img {
+  width: 110px;
+  /* margin-left: 10px; */
+}
+
+.thanks-text h1 {
+  text-align: center;
+  font-size: 210%;
+  line-height: 1;
+  letter-spacing: -2.5px;
+}
+
+.many-thanks {
+  background-image: url('./images/bgggg.png');
+  background-size: cover;
+  background-position: top;
+}
 
 @media (min-width: 768px) {
   .video-prop img {

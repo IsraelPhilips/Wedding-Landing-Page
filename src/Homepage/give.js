@@ -9,6 +9,7 @@ import Hearts from '../images/hearts.png';
 
 import Call from '../images/phone-call.png';
 import Mail from '../images/mail.png';
+import LoveArro from '../images/love-arro.png';
 import { useState } from "react";
 
 function Give() {
@@ -31,6 +32,19 @@ function Give() {
                     <br /> Account Name: Grace Akowe <br />Bank: Zenith </h2></>
                     {/* : <></>
                 } */}
+            </div>
+        </div>
+
+        <div className="give many-thanks" id="give">
+            <div className='thanks-text' id="location">
+                <h1>Many Thanks!</h1><img src={LoveArro} />
+            </div>
+            <div className="account">
+                <p>To our beloved family, friends, and all who have shared in our celebration,
+
+    As we reflect on our wedding day, we are overwhelmed with gratitude for your love and support. Your presence would make our day truly unforgettable, and we are deeply touched by your kindness and generosity.
+
+    Thank you for your warm wishes, thoughtful gifts, and for being a part of our journey. Your love fills our hearts and will accompany us as we begin this new chapter together.</p>
             </div>
         </div>
 

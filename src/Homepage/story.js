@@ -23,6 +23,10 @@ import Hearts from '../images/hearts.png';
 import Arrow from '../images/down-arrow.png';
 import Proposal from '../images/proposal.mp4';
 
+import Pre1 from '../images/pre1.jpg';
+import Pre2 from '../images/pre2.jpg';
+import Pre3 from '../images/pre3.jpg';
+
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -45,7 +49,7 @@ function Story() {
       <div className="story">
         <div className='met-her'>
             <AnimationOnScroll  animateIn="slideInLeft" animateOut="fadeOut" duration=".6" className='met-img'>
-                <img src={El} />
+                <img src={Pre3} />
             </AnimationOnScroll>
             <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6" className='how'>
                 <AnimationOnScroll  animateIn="slideInRight" animateOut="fadeOut" duration=".6" ><h1>How I met Grace.</h1></AnimationOnScroll>
@@ -84,7 +88,7 @@ function Story() {
         
         <div className='met-her met-him'>
             <AnimationOnScroll  animateIn="slideInLeft" animateOut="fadeOut" duration=".6" className='met-img met-img-him'>
-                <img className='met-imm' src={Ten} />
+                <img className='met-imm' src={Pre2} />
             </AnimationOnScroll>
             <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6" className='how2'>
                 <AnimationOnScroll  animateIn="slideInRight" animateOut="fadeOut" duration=".6" ><h1>When I met PTA.</h1></AnimationOnScroll>
