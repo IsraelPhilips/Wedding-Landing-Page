@@ -49,7 +49,7 @@ function Story() {
       <div className="story">
         <div className='met-her'>
             <AnimationOnScroll  animateIn="slideInLeft" animateOut="fadeOut" duration=".6" className='met-img'>
-                <img src={Pre3} />
+                <img src={El} />
             </AnimationOnScroll>
             <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6" className='how'>
                 <AnimationOnScroll  animateIn="slideInRight" animateOut="fadeOut" duration=".6" ><h1>How I met Grace.</h1></AnimationOnScroll>
@@ -88,7 +88,7 @@ function Story() {
         
         <div className='met-her met-him'>
             <AnimationOnScroll  animateIn="slideInLeft" animateOut="fadeOut" duration=".6" className='met-img met-img-him'>
-                <img className='met-imm' src={Pre2} />
+                <img className='met-imm' src={Fi} />
             </AnimationOnScroll>
             <AnimationOnScroll  animateIn="fadeIn" animateOut="fadeOut" duration=".6" className='how2'>
                 <AnimationOnScroll  animateIn="slideInRight" animateOut="fadeOut" duration=".6" ><h1>When I met PTA.</h1></AnimationOnScroll>
