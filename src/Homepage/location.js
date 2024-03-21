@@ -18,7 +18,7 @@ function Location() {
         <div className="address">
             {/* <img src={Map} /> */}
             <h2 style={{fontWeight: '500'}}>The wedding and reception would be taking place at:</h2><br />
-            <h2>SLC Auditorium, <br />Former Fun Factory, <br />Oshuntokun Avenue, 200285, <br />Ibadan, Nigeria.</h2>
+            <h2>SLC Auditorium, <br />Former Fun Factory, <br />Oshuntokun Avenue, Bodija, 200285, <br />Ibadan, Nigeria.</h2>
         </div>
         </div>
         

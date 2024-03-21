@@ -26,6 +26,15 @@ import Prop2 from '../images/prop3.jpg';
 import Pre1 from '../images/pre1.jpg';
 import Pre2 from '../images/pre2.jpg';
 import Pre3 from '../images/pre3.jpg';
+import Pre4 from '../images/pre4.jpg';
+import Pre5 from '../images/pre5.jpg';
+import Pre6 from '../images/pre6.jpg';
+import Pre7 from '../images/pre7.jpg';
+import Pre8 from '../images/pre8.jpg';
+import Pre9 from '../images/pre9.jpg';
+import Pre10 from '../images/pre10.jpg';
+import Pre11 from '../images/pre11.jpg';
+import Pre12 from '../images/pre12.jpg';
 
 import LoveArr from '../images/love-arr.png';
 import LoveArro from '../images/love-arro.png';
@@ -171,6 +180,15 @@ function FullGallery() {
             { src: Pre1 },
             { src: Pre2 },
             { src: Pre3 },
+            { src: Pre4 },
+            { src: Pre5 },
+            { src: Pre6 },
+            { src: Pre7 },
+            { src: Pre8 },
+            { src: Pre9 },
+            { src: Pre10 },
+            { src: Pre11 },
+            { src: Pre12 },
           ]}
         />
       </div>
